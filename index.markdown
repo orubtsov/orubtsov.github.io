@@ -73,5 +73,5 @@ If you’d like to connect or collaborate, feel free to reach out!
 
 - **Email**: [oleg.rubtcov@yahoo.com](oleg.rubtcov@yahoo.com)
 - **GitHub**: [orubtsov](https://github.com/orubtsov)
-<!-- - **LinkedIn**: [linkedin.com/in/orubtsov](https://linkedin.com/in/orubtsov) -->
+- **LinkedIn**: [linkedin.com/in/orubtsov](https://linkedin.com/in/orubtsov)
 - **Telegram**: [@mrruby](https://t.me/mrruby)
