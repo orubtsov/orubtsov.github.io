@@ -45,8 +45,9 @@ Joined as a middle engineer and was promoted to Senior after the first year. Foc
 **Automated Image Adjustment**
 - Built models for predicting image parameters like brightness, contrast, saturation, and LUTs for automated image enhancements.
 
-**Mentoring and Collaboration**
-- Mentored fellow engineers and interviewed candidates for technical roles as part of my responsibilities as a senior engineer.
+**Project Ownership and Mentoring**
+- Drove a project delivered by a 3-engineer team: set the technical direction, helped the team shape and validate hypotheses, and unblocked day-to-day work.
+- Mentored fellow engineers and interviewed candidates for technical roles.
 - Contributed to diffusion transformer and image enhancement projects as part of a team.
 
 ### Computer Vision Research Engineer — [Frisbuy](https://frisbuy.ru)
