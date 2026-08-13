@@ -11,7 +11,7 @@ Hi, I’m Oleg Rubtsov — a passionate machine learning researcher and develope
 
 ## Professional Summary
 
-I specialize in building end-to-end machine learning solutions, from data processing and model training to deploying scalable infrastructure. My projects range from fashion recognition systems to advanced diffusion models and image enhancement techniques. As a tech lead, I’ve also guided teams to deliver high-impact solutions efficiently.
+I specialize in building end-to-end machine learning solutions, from data processing and model training to deploying scalable infrastructure. My projects range from fashion recognition systems to advanced diffusion models and image enhancement techniques.
 
 ---
 
@@ -48,8 +48,9 @@ I specialize in building end-to-end machine learning solutions, from data proces
 - Trained custom **controlnets** to enhance identity preservation and optimized **SDXL** for inpainting tasks.
 - Implemented ["Diffusion Training from Scratch on a Micro-Budget"](https://arxiv.org/abs/2407.15811) approach from scratch.
 
-### **Leadership and Collaboration**
-- Interviewed candidates for technical roles and led teams in delivering diffusion transformer and image enhancement projects.
+### **Mentoring and Collaboration**
+- Mentored fellow engineers and interviewed candidates for technical roles as part of my responsibilities as a senior engineer.
+- Contributed to diffusion transformer and image enhancement projects as part of a team.
 
 ---
 
