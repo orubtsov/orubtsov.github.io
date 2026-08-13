@@ -15,42 +15,55 @@ I specialize in building end-to-end machine learning solutions, from data proces
 
 ---
 
-## Career Highlights
+## Experience
 
-### **Fashion Recognition and Recommendation Systems** (2018–2020)
-- Developed algorithms for recognizing clothing and generating embeddings using distance learning.
-- Implemented **street-to-shop** systems and visual similarity search for catalog recommendations.
-- Designed scalable inference pipelines using **RabbitMQ**, **MongoDB**, **MiniO**, **Kubernetes**, and **Kafka**.
+### Senior Data Scientist — [Prequel Inc.](https://prequel.app)
+*Apr 2020 – Present · Budva, Montenegro (on-site) → Remote, Kuala Lumpur, Malaysia (since Nov 2025)*
 
-### **Satellite Image Segmentation**
-- Worked on segmenting satellite imagery to identify regions of ice, water, and clouds.
+Joined as a middle engineer and was promoted to Senior after the first year. Focused on generative AI, image enhancement, and shipping computer vision models to mobile at consumer scale.
 
-### **Denoising and Image Enhancement** (2020–Present)
-- Created a custom implementation of **Non-Local Means** and trained a dual-context neural network for denoising.
-- Optimized segmentation models for deployment on **iOS** and **Android** platforms.
-
-### **Pose Estimation Optimization**
-- Integrated **OpticalFlow** with Pose Estimation models to enhance performance on video data.
-- Built cross-platform bindings with **Objective-C** and **JNI** for seamless mobile integration.
-
-### **Generative Models and Style Transfer**
-- Explored **StyleGAN** inversion for stylization workflows and trained **Image2Image** models for photo transformations.
-- Deployed models using **Triton** and custom cloud pipelines.
-
-### **Interactive Image Segmentation**
-- Implemented **HRNet**-based interactive segmentation of arbitrary objects with user behavior simulation and mobile deployment.
-
-### **Automated Image Adjustment**
-- Built models for predicting image parameters like brightness, contrast, saturation, and LUTs for automated image enhancements.
-
-### **Diffusion Models and Generative Techniques**
+**Diffusion Models and Generative Techniques**
 - Developed pipelines for **DreamBooth-like** personalized generation and **TryOn** clothing simulations.
 - Trained custom **controlnets** to enhance identity preservation and optimized **SDXL** for inpainting tasks.
 - Implemented ["Diffusion Training from Scratch on a Micro-Budget"](https://arxiv.org/abs/2407.15811) approach from scratch.
 
-### **Mentoring and Collaboration**
+**Denoising and Image Enhancement**
+- Created a custom implementation of **Non-Local Means** and trained a dual-context neural network for denoising.
+- Optimized segmentation models for deployment on **iOS** and **Android** platforms.
+
+**Generative Models and Style Transfer**
+- Explored **StyleGAN** inversion for stylization workflows and trained **Image2Image** models for photo transformations.
+- Deployed models using **Triton** and custom cloud pipelines.
+
+**Interactive Image Segmentation**
+- Implemented **HRNet**-based interactive segmentation of arbitrary objects with user behavior simulation and mobile deployment.
+
+**Pose Estimation Optimization**
+- Integrated **OpticalFlow** with Pose Estimation models to enhance performance on video data.
+- Built cross-platform bindings with **Objective-C** and **JNI** for seamless mobile integration.
+
+**Automated Image Adjustment**
+- Built models for predicting image parameters like brightness, contrast, saturation, and LUTs for automated image enhancements.
+
+**Mentoring and Collaboration**
 - Mentored fellow engineers and interviewed candidates for technical roles as part of my responsibilities as a senior engineer.
 - Contributed to diffusion transformer and image enhancement projects as part of a team.
+
+### Computer Vision Research Engineer — [Frisbuy](https://frisbuy.ru)
+*Jun 2018 – Feb 2020 · Kaliningrad, Russia*
+
+**Fashion Recognition and Recommendation Systems**
+- Developed algorithms for recognizing clothing and generating embeddings using distance learning.
+- Implemented **street-to-shop** systems and visual similarity search for catalog recommendations.
+- Handled data collection and preprocessing, model training, and scalable inference infrastructure built on **RabbitMQ**, **MongoDB**, **MinIO**, **Kubernetes**, and **Kafka**.
+
+---
+
+## Independent & Community Projects
+
+### Satellite Image Segmentation
+*Volunteer collaboration with an independent group of ML enthusiasts*
+- Semantic segmentation of satellite imagery to identify regions of ice, water, and clouds.
 
 ---
 
