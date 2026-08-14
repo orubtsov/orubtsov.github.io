@@ -23,12 +23,6 @@ Took a modern video restoration model from evaluation through to a working produ
 
 Trained an in-house classifier for automatic labelling of NSFW content. Currently under evaluation ahead of integration.
 
-### Generative Inference in Production · 2023–2025
-
-Built and shipped a large number of production services around **Stable Diffusion**, **SDXL** and fine-tuned diffusion checkpoints: writing the inference code and serving plumbing, converting checkpoints into the formats each runtime required, and taking the services through to deployment.
-
-In 2025 this extended to specialised hardware — compiling **SDXL** and **Flux** for **AWS Inferentia** using the **AWS Neuron** SDK.
-
 ### Automated Image Adjustment · 2025–2026
 
 Three successive approaches to automatic photo enhancement.
@@ -38,6 +32,12 @@ Three successive approaches to automatic photo enhancement.
 **Reinforcement learning over a non-differentiable engine.** The production graphics engine exposes primitives that cannot be differentiated through, so the problem was reframed: a goal-conditioned RL agent takes an image plus summary statistics and learns to drive the engine's controls toward a reference auto-adjustment target, with the engine itself serving as the environment. Built as a research prototype.
 
 **Vision-language models.** The current line of work drives a VLM against the engine's **JSON** API and lets the model choose the adjustments end-to-end. This works in practice and produces good results; a further iteration is underway.
+
+### Generative Inference in Production · 2023–2025
+
+Built and shipped a large number of production services around **Stable Diffusion**, **SDXL** and fine-tuned diffusion checkpoints: writing the inference code and serving plumbing, converting checkpoints into the formats each runtime required, and taking the services through to deployment.
+
+In 2025 this extended to specialised hardware — compiling **SDXL** and **Flux** for **AWS Inferentia** using the **AWS Neuron** SDK.
 
 ### Virtual Try-On — Feasibility Study · Summer 2024
 
