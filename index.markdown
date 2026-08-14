@@ -3,90 +3,62 @@ layout: default
 # title: Oleg Rubtsov Portfolio
 ---
 
-<!-- # Oleg Rubtsov -->
+## Senior ML / Research Engineer — Generative Models & Computer Vision
 
-Hi, I’m Oleg Rubtsov — a passionate machine learning researcher and developer with expertise in computer vision, generative models, and mathematical modeling. With years of experience in solving challenging problems, I thrive at the intersection of innovation and practicality.
-
----
-
-## Professional Summary
-
-I specialize in building end-to-end machine learning solutions, from data processing and model training to deploying scalable infrastructure. My projects range from fashion recognition systems to advanced diffusion models and image enhancement techniques.
+Eight years taking vision problems from paper to production: diffusion models and GANs, real-time models running on phones, and the infrastructure that serves them. I take open-ended problems, research the options, and ship the result.
 
 ---
 
 ## Experience
 
 ### Senior Data Scientist — [Prequel Inc.](https://prequel.app)
-*Apr 2020 – Present · Budva, Montenegro (on-site) → Remote, Kuala Lumpur, Malaysia (since Nov 2025)*
+*Apr 2020 – Present · Remote, Kuala Lumpur, Malaysia*
 
-Joined as a middle engineer and was promoted to Senior after the first year. Focused on generative AI, image enhancement, and shipping computer vision models to mobile at consumer scale.
+Joined as a middle engineer building on-device computer vision, promoted to Senior after the first year, and moved progressively into generative modelling, production inference at scale, and open-ended R&D.
 
-**Diffusion Models and Generative Techniques**
-- Developed pipelines for **DreamBooth-like** personalized generation and **TryOn** clothing simulations.
-- Trained custom **controlnets** to enhance identity preservation and optimized **SDXL** for inpainting tasks.
-- Implemented ["Diffusion Training from Scratch on a Micro-Budget"](https://arxiv.org/abs/2407.15811) approach from scratch.
-
-**Denoising and Image Enhancement**
-- Created a custom implementation of **Non-Local Means** and trained a dual-context neural network for denoising.
-- Optimized segmentation models for deployment on **iOS** and **Android** platforms.
-
-**Generative Models and Style Transfer**
-- Explored **StyleGAN** inversion for stylization workflows and trained **Image2Image** models for photo transformations.
-- Deployed models using **Triton** and custom cloud pipelines.
-
-**Interactive Image Segmentation**
-- Implemented **HRNet**-based interactive segmentation of arbitrary objects with user behavior simulation and mobile deployment.
-
-**Pose Estimation Optimization**
-- Integrated **OpticalFlow** with Pose Estimation models to enhance performance on video data.
-- Built cross-platform bindings with **Objective-C** and **JNI** for seamless mobile integration.
-
-**Automated Image Adjustment**
-- Built models for predicting image parameters like brightness, contrast, saturation, and LUTs for automated image enhancements.
-
-**Project Ownership and Mentoring**
-- Drove a project delivered by a 3-engineer team: set the technical direction, helped the team shape and validate hypotheses, and unblocked day-to-day work.
-- Mentored fellow engineers and interviewed candidates for technical roles.
-- Contributed to diffusion transformer and image enhancement projects as part of a team.
+- **Video transitions** (2026, current): cutting cost per generation **2.5×** against the incumbent third-party API by fine-tuning an open video generation model in-house with **LoRA**, and adapting a stronger, costlier model alongside it to map the quality-versus-unit-cost trade-off. Also took a modern video restoration model into production.
+- **Generative inference in production** (2023–2025): built and shipped a large number of **Stable Diffusion**, **SDXL** and fine-tuned diffusion services — inference code, serving plumbing, checkpoint conversion, and production deployment. Compiled **SDXL** and **Flux** for **AWS Inferentia** with the **AWS Neuron** SDK.
+- **Generative models in production** (2022–2024): trained per-user **DreamBooth** models that shipped as a production feature, and built an identity-preserving **ControlNet** from scratch — own dataset, own training pipeline. Ran the virtual try-on feasibility study that settled the company's position on the technology.
+- **Open-ended R&D on automatic photo enhancement** (2025–2026): took an ill-defined product problem through three research directions — predicting parameters for differentiable filters, a goal-conditioned **RL** agent that drives the app's non-differentiable graphics engine as its environment, and **vision-language models** choosing adjustments end to end. The VLM approach works and is the line currently in development.
+- **Real-time computer vision on mobile** (2020–2022): shipped human segmentation and pose estimation to **iOS** and **Android** end to end — model, algorithmic optimization, and native integration. Made pose estimation real-time on user video with an **optical-flow** keypoint-tracking scheme that re-runs inference only on drift, and wrote the **Objective-C** and **JNI** bindings myself. Shipped click-driven interactive segmentation at **150 ms** per interaction on device via **MNN**, training it against a user-behaviour simulator I wrote from scratch.
+- Owned research-to-production projects delivered with teams of around three engineers; mentored engineers and ran technical interviews.
 
 ### Computer Vision Research Engineer — [Frisbuy](https://frisbuy.ru)
 *Jun 2018 – Feb 2020 · Kaliningrad, Russia*
 
-**Fashion Recognition and Recommendation Systems**
-- Developed algorithms for recognizing clothing and generating embeddings using distance learning.
-- Implemented **street-to-shop** systems and visual similarity search for catalog recommendations.
-- Handled data collection and preprocessing, model training, and scalable inference infrastructure built on **RabbitMQ**, **MongoDB**, **MinIO**, **Kubernetes**, and **Kafka**.
+Sole engineer on the company's core product, from research through to production.
+
+- Built an end-to-end **street-to-shop** system: identify garments from everyday photos and retrieve visually similar products from catalogs holding tens of thousands of items.
+- Trained a **RetinaNet** detector from scratch and learned garment embeddings with **triplet loss** on an **Inception**-family backbone.
+- Designed and implemented the entire production infrastructure — **Kubernetes**, **RabbitMQ**, **MongoDB**, **MinIO** — including a custom message consumer, then onboarded and mentored a junior engineer onto the project.
+- Shipped to production and validated in A/B tests with pilot clients, where it lifted overall sales by around **12%**.
+
+[Full project details →](/projects/)
 
 ---
 
-## Independent & Community Projects
+## Selected Research
 
-### Satellite Image Segmentation
-*Volunteer collaboration with an independent group of ML enthusiasts*
-- Semantic segmentation of satellite imagery to identify regions of ice, water, and clouds.
+### Video Diffusion from Scratch on a Single GPU
+*Independent research · 2025, resumed Mar 2026 – present*
+
+Adapted ["Diffusion Training from Scratch on a Micro-Budget"](https://arxiv.org/abs/2407.15811) from images to video, training on a single **RTX 6000 Pro** with **OpenVid** under a **flow-matching** objective. Set the research direction, designed the experiments and ablations, and drove the model through successive improvements: 3D **RoPE**, richer captions, CFG with caption dropout, **REPA**, and a move from pixel space to latents.
+
+**FVD-I3D 146.76** and **CLIPScore 32.28**, versus 30.63 on held-out real video–caption pairs under the same evaluation pipeline.
 
 ---
 
 ## Skills
 
-- **Languages**: Python, C++ (Basic), R (Basic)
-- **Frameworks and libraries**: PyTorch, OpenCV, NumPy, SciPy, Scikit-learn
-- **Tools**: MLFlow, Kubernetes, Docker, Triton
-- **Skills**: DL&ML, Computer Vision, Image Processing, Research
-
----
-
-## Personal Interests
-- **Exploring Fluid Dynamics**: Experimenting with mathematical models and numerical methods to understand fluid behavior and solve complex equations like Navier-Stokes.
+- **ML & Generative Vision**: PyTorch; diffusion and flow-matching models, GANs, vision-language models, reinforcement learning, metric learning; detection, segmentation, pose estimation, image enhancement
+- **ML Systems & Optimization**: C++, TensorRT, AWS Inferentia / Neuron, MNN; GPU inference optimization, real-time mobile inference, Objective-C / JNI integration
+- **Training & Production Infrastructure**: Python, Triton, Ray, Modal, Docker, Kubernetes, MLflow
 
 ---
 
 ## Contact
 
-If you’d like to connect or collaborate, feel free to reach out!
-
-- **Email**: [oleg.rubtcov@yahoo.com](oleg.rubtcov@yahoo.com)
+- **Email**: [oleg.rubtcov@yahoo.com](mailto:oleg.rubtcov@yahoo.com)
 - **GitHub**: [orubtsov](https://github.com/orubtsov)
 - **LinkedIn**: [linkedin.com/in/orubtsov](https://linkedin.com/in/orubtsov)
 - **Telegram**: [@mrruby](https://t.me/mrruby)
