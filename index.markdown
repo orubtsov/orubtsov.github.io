@@ -1,13 +1,11 @@
 ---
 layout: default
-# title: Oleg Rubtsov Portfolio
+title: Oleg Rubtsov
+page_title: "Oleg Rubtsov — Senior ML / Research Engineer"
 ---
-
-## Senior ML / Research Engineer — Generative Models & Computer Vision
 
 Eight years taking vision problems from paper to production: diffusion models and GANs, real-time models running on phones, and the infrastructure that serves them. I take open-ended problems, research the options, and ship the result.
 
----
 
 ## Experience
 
@@ -33,9 +31,8 @@ Sole engineer on the company's core product, from research through to production
 - Designed and implemented the entire production infrastructure — **Kubernetes**, **RabbitMQ**, **MongoDB**, **MinIO** — including a custom message consumer, then onboarded and mentored a junior engineer onto the project.
 - Shipped to production and validated in A/B tests with pilot clients, where it lifted overall sales by around **12%**.
 
-[Full project details →](/projects/)
+[Detailed write-ups of individual projects →](/projects/)
 
----
 
 ## Selected Research
 
@@ -46,19 +43,9 @@ Adapted ["Diffusion Training from Scratch on a Micro-Budget"](https://arxiv.org/
 
 **FVD-I3D 146.76** and **CLIPScore 32.28**, versus 30.63 on held-out real video–caption pairs under the same evaluation pipeline.
 
----
 
 ## Skills
 
 - **ML & Generative Vision**: PyTorch; diffusion and flow-matching models, GANs, vision-language models, reinforcement learning, metric learning; detection, segmentation, pose estimation, image enhancement
 - **ML Systems & Optimization**: C++, TensorRT, AWS Inferentia / Neuron, MNN; GPU inference optimization, real-time mobile inference, Objective-C / JNI integration
 - **Training & Production Infrastructure**: Python, Triton, Ray, Modal, Docker, Kubernetes, MLflow
-
----
-
-## Contact
-
-- **Email**: [oleg.rubtcov@yahoo.com](mailto:oleg.rubtcov@yahoo.com)
-- **GitHub**: [orubtsov](https://github.com/orubtsov)
-- **LinkedIn**: [linkedin.com/in/orubtsov](https://linkedin.com/in/orubtsov)
-- **Telegram**: [@mrruby](https://t.me/mrruby)

@@ -1,14 +1,11 @@
 ---
 layout: default
-title: Project Details
+title: Projects
+page_title: "Projects — Oleg Rubtsov"
 permalink: /projects/
 ---
 
-# Project Details
-
-Longer write-ups of the work summarised on the [main page](/). Ordered most recent first.
-
----
+Longer write-ups of the work summarised on the [main page](/), most recent first.
 
 ## Prequel Inc. · Apr 2020 – Present
 
@@ -78,7 +75,6 @@ Click-driven segmentation of arbitrary objects on an **HRNet** backbone: the use
 
 **Denoising.** Two complementary solutions: a dual-context convolutional denoising network, and a **Non-Local Means** implementation hand-written in **C++** and ported to mobile.
 
----
 
 ## Frisbuy · Jun 2018 – Feb 2020
 
@@ -94,7 +90,6 @@ An end-to-end **street-to-shop** pipeline allowing users to identify garments fr
 
 **Team.** Started as the sole engineer on the project and later onboarded and mentored a junior engineer.
 
----
 
 ## Independent Research
 

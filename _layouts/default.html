@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.page_title | default: site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<meta property="og:title" content="{{ page.page_title | default: site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:type" content="profile">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="name" href="{{ '/' | relative_url }}">Oleg Rubtsov</a>
+  <p class="role">Senior ML / Research Engineer — Generative Models &amp; Computer Vision</p>
+  <p class="contacts">
+    <a href="mailto:oleg.rubtcov@yahoo.com">oleg.rubtcov@yahoo.com</a>
+    <a href="https://linkedin.com/in/orubtsov">LinkedIn</a>
+    <a href="https://github.com/orubtsov">GitHub</a>
+    <a href="https://t.me/mrruby">Telegram</a>
+  </p>
+</header>
+
+<main>
+{{ content }}
+</main>
+
+</body>
+</html>
